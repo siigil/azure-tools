@@ -1,5 +1,5 @@
 # azure-tools
-Personal tools for working in Azure. Nothing too fancy, just a collection of what's' handy.
+Personal tools for working in Azure. Nothing too fancy, just a collection of what's handy.
 
 ### aad-role-audit.py
 Based on an az CLI session, determine if a user, group, or Service Principal has Entra ID / Azure AD role assignments (Directory or Custom), and deliver a final output with details. Does not yet include PIM.
