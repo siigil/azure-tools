@@ -8,13 +8,13 @@ Based on an az CLI session, determine if a User, Group, or Service Principal has
 - Current results returned in JSON (-o) and CLI findings
 ### Examples:
 #### Return role assignments for groups starting with term "Test"
-python3 aad-role-audit.py -gn "Test"
+`python3 aad-role-audit.py -gn "Test"`
 #### Return role assignments for "Global" roles ("Global Administrator", "Global Reader")
-python3 aad-role-audit.py -rn "Global"
+`python3 aad-role-audit.py -rn "Global"`
 #### Return role assignments for users starting with "Z" in a file "2024-03-users.json" (default is output-users.json)
-python3 aad-role-audit.py -un Z -o 2024-03
+`python3 aad-role-audit.py -un Z -o 2024-03`
 #### Return role assignments for "Global Reader" by role ID (can be used with users, groups, & SPs as well)
-python3 aad-role-audit.py -ri f2ef992c-3afb-46b9-b7cf-a126ee74c451
+`python3 aad-role-audit.py -ri f2ef992c-3afb-46b9-b7cf-a126ee74c451`
 
 ## az-membership-enum.py
 For a given CSV list of Azure users (exported from Azure portal or otherwise) collect AAD membership details using az ad CLI tools.
