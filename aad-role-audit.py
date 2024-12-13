@@ -11,6 +11,7 @@ import requests
 import json
 import subprocess
 import argparse
+import csv
 
 typename_sp = "SPs"
 endpoint_sp = "servicePrincipals"
@@ -224,7 +225,6 @@ def group_csv_report(groups, filename):
             names = group['names']
             for member, upn, name in zip(members,upns,names):
                 report.writerow([group['displayName'],member,upn,name])
-    csvfile.close()
 
 # Testing using for everything
 def handle_item_roles(token, output, typename, endpoint, oid='', name=''):
